@@ -1,0 +1,63 @@
+.british-fact {
+  position: relative;
+  padding: 58px 5% 0px;
+  background: $white;
+
+  @media #{$mobile-only} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    display: flex;
+  }
+
+  @media #{$desktop} {
+    background: $bg-grey;
+    padding: 70px 5% 65px;
+  }
+}
+
+.british-fact__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  background: url(../img/research-bgr.svg)20% 55px no-repeat;
+  background-size: 260px 100%;
+  background-position: inherit;
+  width: 100%;
+}
+
+.british-fact-content {
+  padding: 40px 0px;
+  width: 48%;
+
+  @media #{$desktop} {
+    padding-top: 80px;
+    width: 65%;
+  }
+}
+
+.british-fact-header {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 20px;
+
+  @media #{$desktop} {
+    line-height: 30px;
+  }
+}
+
+.british-fact-text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 15px;
+
+  @media #{$desktop} {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.british-fact-link {
+  color: $pink;
+}

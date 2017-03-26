@@ -15,16 +15,16 @@
 git checkout master
 
 # Заберите изменения из репозитория Академии¹
-git pull academy master
+git pull upstream master
 
 # Отправьте изменения в ваш форк на Гитхабе
 git push
 ```
 
-¹ В `academy` должна быть ссылка на репозиторий Академии. Если его там нет, добавьте:
+¹ В `upstream` должна быть ссылка на репозиторий Академии. Если его там нет, добавьте:
 
 ```
-git remote add academy git@github.com:htmlacademy-adaptive/52663-pink.git
+git remote add upstream git@github.com:htmlacademy-adaptive/52663-pink.git
 ```
 
 Когда вы обновили `master`, создайте ветку для нового задания:

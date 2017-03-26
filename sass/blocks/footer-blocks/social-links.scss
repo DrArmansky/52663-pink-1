@@ -1,0 +1,49 @@
+.social-links {
+  text-align: center;
+
+  @media #{$mobile-only} {
+    margin-bottom: 32px;
+  }
+}
+
+.social-links__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  border: 2px solid $dark-grey;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: no-repeat center;
+  position: relative;
+
+  &:hover {
+      border-color: $light-blue;
+  }
+
+  &:focus {
+      opacity: 0.3;
+  }
+
+  svg {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.social-links__item--tw {
+     background-image: url('../img/icons/icon-twitter.svg');
+   }
+
+  &.social-links__item--fb {
+     background-image: url('../img/icons/icon-facebook.svg');
+   }
+
+  &.social-links__item--yt {
+     background-image: url('../img/icons/icon-youtube.svg');
+   }
+}

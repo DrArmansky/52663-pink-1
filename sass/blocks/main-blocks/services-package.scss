@@ -1,0 +1,242 @@
+.services-package {
+  text-align: center;
+  background: url("../img/bg-triangle-white.svg") no-repeat center top $bg-grey;
+  background-size: 105% auto;
+  padding: 85px 5% 40px;
+
+  @media #{$tablet} {
+    padding: 90px 5% 70px;
+  }
+
+  @media #{$desktop} {
+    padding: 120px 5% 96px;
+  }
+}
+
+.services-package__slides {
+  display: flex;
+}
+
+.services-package__slide {
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-grow: 1;
+
+  @media #{$tablet} {
+    display: flex;
+    width: 25%;
+    margin: 0;
+  }
+
+  &--options {
+    display: none;
+
+    .services-package__service-name,
+    .services-package__service {
+      border-left: 2px solid $border-grey;
+      font-size: 14px;
+      line-height: 30px;
+      text-transform: none;
+    }
+
+    .services-package__service-name {
+      padding: 0px;
+    }
+
+    @media #{$tablet} {
+      display: flex;
+    }
+  }
+}
+
+.services-package__slide-structure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.services-package__service-name,
+.services-package__service {
+  border: 1px solid $border-grey;
+  border-left: 2px solid $border-grey;
+  border-right: 2px solid $border-grey;
+
+  @media #{$tablet} {
+    border-left: 0px;
+  }
+}
+
+
+
+
+.services-package__service-name {
+  position: relative;
+  border-top: none;
+  background-color: $bg-light-blue;
+  color: $white;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 22px 0px;
+  text-transform: uppercase;
+
+  &--hit::before  {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 0;
+    top: 0;
+    background: url("../img/bg-hit.png") no-repeat left top;
+    background-size: contain;
+
+    @media #{$tablet} {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &--hit::after {
+    content: "Хит";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    transform: rotate(-45deg);
+    width: 75px;
+    height: 20px;
+    left: -15px;
+    top: 15px;
+
+    @media #{$tablet} {
+      left: -20px;
+      top: 8px;
+    }
+  }
+
+  span {
+    font-size: 24px;
+    font-weight: normal;
+
+    @media #{$tablet} {
+      font-size: 18px;
+      font-weight: 100;
+    }
+
+    @media #{$desktop} {
+      font-size: 24px;
+    }
+  }
+
+  @media #{$tablet} {
+    font-size: 14px;
+    padding: 15px 0px;
+  }
+
+  @media #{$desktop} {
+    padding: 24px 0px;
+    font-size: 16px;
+  }
+}
+
+.services-package__service {
+  color: $light-blue;
+  background: $white;
+  padding: 13px 42px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+
+  &:last-child {
+    border-bottom: 2px solid $border-grey;
+  }
+
+  &--included::before {
+    content: "";
+    width: 30px;
+    height: 15px;
+    border-left: 3px solid #3dc644;
+    border-bottom: 3px solid #3dc644;
+    position: absolute;
+    top: 16px;
+    right: 35px;
+    transform: rotate(-45deg);
+    box-shadow: none;
+
+    @media #{$tablet} {
+      top: 10px;
+      right: 55px;
+    }
+    @media #{$desktop} {
+      top: 15px;
+      right: 96px;
+    }
+  }
+
+  &--deleted {
+    &::before,
+    &::after {
+      content: "";
+      width: 35px;
+      height: 3px;
+      background: #f25b26;
+      position: absolute;
+      top: 26px;
+      right: 35px;
+
+        @media #{$tablet} {
+          top: 20px;
+          right: 56px;
+        }
+
+        @media #{$desktop} {
+          top: 28px;
+          right: 96px;
+        }
+      }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+      }
+  &::after {
+    transform: rotate(-45deg);
+    }
+  }
+
+  @media #{$tablet} {
+    min-height: 45px;
+    padding: 6px 15px;
+    vertical-align: middle;
+    box-sizing: border-box;
+  }
+
+  @media #{$desktop} {
+    min-height: 60px;
+    padding: 12px 20px;
+  }
+
+  span {
+    @media #{$tablet} {
+      display: none;
+    }
+  }
+}
+
+.services-package__service .services-package__service-vivsible {
+  @media #{$tablet} {
+    display: inline-block;
+  }
+  @media #{$desktop} {
+    font-size: 18px;
+  }
+}
+
+.services-package__slider-controls {
+  @media #{$tablet} {
+    display: none;
+  }
+}

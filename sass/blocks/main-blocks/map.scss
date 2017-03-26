@@ -1,0 +1,37 @@
+.map {
+  position: relative;
+  height: 195px;
+  margin-top: 35px;
+
+  @media #{$tablet} {
+    height: 380px;
+    margin-top: 25px;
+  }
+
+  @media #{$desktop} {
+    height: 525px;
+    margin-top: 0;
+  }
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    border-right: 50vw solid transparent;
+    border-top: 35px solid $white;
+    border-left: 50vw solid transparent;
+    box-sizing: border-box;
+    top: -1px;
+
+    @media #{$tablet} {
+      border-top-width: 75px;
+    }
+
+    @media #{$desktop} {
+      border-top-width: 125px;
+    }
+  }
+
+}

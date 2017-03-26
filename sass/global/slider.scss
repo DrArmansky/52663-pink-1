@@ -1,0 +1,43 @@
+
+.slider__controls label {
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  border: 3px solid $white;
+  border-radius: 50%;
+  background-color: $dark-grey;
+  cursor: pointer;
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.slider__slide {
+  display: none;
+}
+
+.slider__toggle {
+  display: none;
+}
+
+#reviews-btn-1:checked ~ .reviews__slides .reviews__slide:nth-child(1),
+#reviews-btn-2:checked ~ .reviews__slides .reviews__slide:nth-child(2),
+#reviews-btn-3:checked ~ .reviews__slides .reviews__slide:nth-child(3),
+#services-btn-1:checked ~ .services-package__slides .services-package__slide:nth-child(2),
+#services-btn-2:checked ~ .services-package__slides .services-package__slide:nth-child(3),
+#services-btn-3:checked ~ .services-package__slides .services-package__slide:nth-child(4),  {
+  display: flex;
+}
+
+#reviews-btn-1:checked ~ .slider__controls label[for="reviews-btn-1"],
+#reviews-btn-2:checked ~ .slider__controls label[for="reviews-btn-2"],
+#reviews-btn-3:checked ~ .slider__controls label[for="reviews-btn-3"],
+#services-btn-1:checked ~ .slider__controls label[for="services-btn-1"],
+#services-btn-2:checked ~ .slider__controls label[for="services-btn-2"],
+#services-btn-3:checked ~ .slider__controls label[for="services-btn-3"] {
+  border-color: $light-blue;
+  background-color: $white;
+}

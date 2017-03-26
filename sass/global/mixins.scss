@@ -1,0 +1,59 @@
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container() {
+  margin: 0 auto;
+  max-width: 280px;
+
+  @media #{$tablet} {
+    width: auto;
+    max-width: 700px;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  @media #{$desktop} {
+    width: auto;
+    max-width: 940px;
+  }
+}
+
+@mixin track() {
+  width: 240px;
+  height: 2px;
+  background: $black;
+}
+
+@mixin thumb() {
+  background: $white;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:active {
+    background: $pink;
+  }
+}
+
+@mixin btn-round($color) {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  background: none;
+  margin: 0 auto;
+  padding: 15px 35px;
+  text-decoration: none;
+  color: $color;
+  border: 2px solid $color;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+}

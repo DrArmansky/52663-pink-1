@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="page-container">
+
+      <header class="page-header">
+          <nav class="main-nav  main-nav--closed main-nav--nojs">
+            <div class="main-nav__wrapper">
+              <div class="main-nav__logo">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                    <source media="(min-width: 640px)" srcset="img/logo-pink-white-tablet.svg">
+                    <img class="main-nav__app-name" width="75" height="22" src="img/logo-pink-white-mobile.svg"
+                    alt="Логотип PINK">
+                </picture>
+                <button class="main-nav__toggle" type="button"></button>
+              </div>
+              <ul class="main-nav__items">
+                <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
+                <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+                <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+                <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p class="page-header__page-name page-header__page-name--photo">Фотографии пользователей</p>
+      </header>
+
+        <main>
+          <section class="gallery-slogan gallery-slogan--top block-wrapper">
+              <p>
+                Взгляните на фотографии, которые выкладывают пользователи!
+                Видите, как не хватает ваших?
+              </p>
+          </section>
+          <section class="gallery block-wrapper">
+            <article class="gallery__item gallery__item--panorama">
+              <picture class="gallery__photo">
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="img/panorama-tablet@1x.jpg">
+                <img src="img/panorama-mobile@1x.jpg">
+              </picture>
+              <div class="gallery__content-wrapper">
+              <header class="gallery__item-header">
+                <h1 class="gallery__item-tittle">Анна <time class="gallery__time" datetime="2014-04-21T10:55:00">(5 минут назад)</time></h1>
+              </header>
+              <p class="gallery__item-content">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <footer class="gallery__item-footer">
+                <span class="gallery__likes">Нравится: <a>215</a></span>
+              </footer>
+              </div>
+            </article>
+            <article class="gallery__item">
+              <picture class="gallery__photo">
+                <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="img/photo-1-tablet@1x.jpg">
+                <img src="img/photo-1-mobile@1x.jpg">
+              </picture>
+              <div class="gallery__content-wrapper">
+              <header class="gallery__item-header">
+                <h1 class="gallery__item-tittle">Левон <time class="gallery__time" datetime="2014-04-21T10:55:00">(5 часов назад)</time></h1>
+              </header>
+              <p class="galllery__item-content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <footer class="gallery__item-footer">
+                <span class="gallery__likes">Нравится: <a>356</a></span>
+              </footer>
+              </div>
+            </article>
+            <article class="gallery__item">
+                <picture class="gallery__photo">
+                  <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg">
+                  <source media="(min-width: 640px)" srcset="img/photo-2-tablet@1x.jpg">
+                  <img src="img/photo-2-mobile@1x.jpg">
+                </picture>
+              <div class="gallery__content-wrapper">
+              <header class="gallery__item-header">
+                <h1 class="gallery__item-tittle">Антон <time class="gallery__time" datetime="2014-04-21T10:55:00">(12 часов назад)</time></h1>
+              </header>
+              <p class="galllery__item-content">Соседи будут рады!</p>
+              <footer class="gallery__item-footer">
+                <span class="gallery__likes">Нравится: <a>666</a></span>
+              </footer>
+              </div>
+            </article>
+            <article class="gallery__item">
+                <picture class="gallery__photo">
+                  <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg">
+                  <source media="(min-width: 640px)" srcset="img/photo-3-tablet@1x.jpg">
+                  <img src="img/photo-3-mobile@1x.jpg">
+                </picture>
+              <div class="gallery__content-wrapper">
+              <header class="gallery__item-header">
+                <h1 class="gallery__item-tittle">Борис <time class="gallery__time" datetime="2014-04-21T10:55:00">(20 часов назад)</time></h1>
+              </header>
+              <p class="galllery__item-content">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <footer class="gallery__item-footer">
+                <span class="gallery__likes">Нравится: <a>215</a></span>
+              </footer>
+              </div>
+            </article>
+            <article class="gallery__item">
+                <picture class="gallery__photo">
+                  <source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg">
+                  <source media="(min-width: 640px)" srcset="img/photo-4-tablet@1x.jpg">
+                  <img src="img/photo-4-mobile@1x.jpg">
+                </picture>
+              <div class="gallery__content-wrapper">
+              <header class="gallery__item-header">
+                <h1 class="gallery__item-tittle">Сергей <time class="gallery__time" datetime="2014-04-21T10:55:00">(25 часов назад)</time></h1>
+              </header>
+              <p class="galllery__item-content">Самая кубанская в мире!</p>
+              <footer class="gallery__item-footer">
+                <span class="gallery__likes">Нравится: <a>4</a></span>
+              </footer>
+              </div>
+            </article>
+            <article class="gallery__item">
+                <picture class="gallery__photo">
+                  <source media="(min-width: 960px)" srcset="img/photo-5-desktop@1x.jpg">
+                  <source media="(min-width: 640px)" srcset="img/photo-5-tablet@1x.jpg">
+                  <img src="img/photo-5-mobile@1x.jpg">
+                </picture>
+              <div class="gallery__content-wrapper">
+              <header class="gallery__item-header">
+                <h1 class="gallery__item-tittle">Максим <time class="gallery__time" datetime="2014-04-21T10:55:00">(40 часов назад)</time></h1>
+              </header>
+              <p class="galllery__item-content">Где снег-то?</p>
+              <footer class="gallery__item-footer">
+                <span class="gallery__likes">Нравится: <a>150</a></span>
+              </footer>
+              </div>
+            </article>
+            <article class="gallery__item">
+                <picture class="gallery__photo">
+                  <source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg">
+                  <source media="(min-width: 640px)" srcset="img/photo-6-tablet@1x.jpg">
+                  <img src="img/photo-6-mobile@1x.jpg">
+                </picture>
+              <div class="gallery__content-wrapper">
+              <header class="gallery__item-header">
+                <h1 class="gallery__item-tittle">Надежда <time class="gallery__time" datetime="2014-04-21T10:55:00">(45 часов назад)</time></h1>
+              </header>
+              <p class="galllery__item-content">Всем GM и взаимные лайки!</p>
+              <footer class="gallery__item-footer">
+                <span class="gallery__likes">Нравится: <a>2560</a></span>
+              </footer>
+              </div>
+            </article>
+          </section>
+          <section class="gallery-slogan gallery-slogan--bottom block-wrapper">
+            <p>
+              Затмите их всех!<br>
+              Выкладывайте все, что накопилось в телефоне!
+            </p>
+        </section>
+          <section class="photo-constructor">
+            <form class="photo-constructor__form block-wrapper" action="">
+                <picture class="gallery__photo">
+                    <source media="(min-width: 960px)" srcset="img/photo-7-desktop@1x.jpg">
+                    <source media="(min-width: 640px)" srcset="img/photo-7-tablet@1x.jpg">
+                    <img  class="photo-constructor__constructor-object" src="img/photo-7-mobile@1x.jpg" width="280px" height="374px">
+                </picture>
+              <fieldset class="photo-constructor__tools">
+                <div class="photo-constructor__control">
+                    <button type="button" class="photo-constructor__pruning active">
+                        <svg version="1" width="48" height="48" viewBox="0 0 48 48">
+                            <path fill="none" d="M0 0h48v48H0V0z"/>
+                            <path d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="photo-constructor__colors">
+                        <svg version="1" width="48" height="48" viewBox="0 0 48 48">
+                            <path fill="none" d="M0 0h48v48H0V0z"/>
+                            <path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88c-1.17 1.17-1.17 3.07 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11c1.17-1.17 1.17-3.07 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="photo-constructor__contrast">
+                        <svg version="1" xmlns="http://www.w3.org/2000/svg" width="31.92" height="31.92" viewBox="-35.422 -7.96 31.92 31.92">
+                            <path d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/>
+                            <path d="M-19.462 16.33c4.706 0 8.52-3.812 8.52-8.52 0-4.704-3.813-8.518-8.52-8.518"/>
+                        </svg>
+                    </button>
+                    <div class="photo-constructor__range-controls active">
+                      <input type="range" class="range-slider range-slider--common">
+                    </div>
+                    <div class="photo-constructor__range-controls">
+                      <input type="range" class="range-slider range-slider--common">
+                    </div>
+                    <div class="photo-constructor__range-controls">
+                      <input type="range" class="range-slider range-slider--common">
+                    </div>
+                </div>
+                <div class="photo-constructor__buttons-wrapper">
+                    <input class="photo-constructor__btn-post" type="submit" value="Запостить">
+                    <button type="button" class="photo-constructor__btn-cancel">Отмена</button>    
+                </div>
+              </fieldset>
+            </form>
+          </section>
+        </main>
+
+        <footer class="page-footer">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__app-logo" width="147" height="41" src="img/logo-pink-blue-mobile.svg"
+            alt="Логотип PINK">
+          </picture>
+          <div class="social-links">
+            <a class="social-links__item social-links__item--tw" href="https://twitter.com"></a>
+            <a class="social-links__item social-links__item--fb" href="https://www.facebook.com"></a>
+            <a class="social-links__item social-links__item--yt" href="https://www.youtube.com"></a>
+          </div>
+          <p class="page-footer__copyright">
+            Разработано:
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+                <svg class="page-footer__copyright-logo" width="27" height="34" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                fill="#d22856" viewbox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+                <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
+                  l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
+                  l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787
+                  l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65
+                  l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036
+                  v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg></a>
+          </p>
+        </footer>
+
+        <script>
+          var navMain = document.querySelector(' .main-nav');
+          var navToggle = document.querySelector('.main-nav__toggle');
+
+          navMain.classList.remove ('main-nav--nojs');
+
+          navToggle.addEventListener('click', function() {
+            if (navMain.classList.contains('main-nav--closed')) {
+              navMain.classList.remove('main-nav--closed');
+              navMain.classList.add('main-nav--opened');
+            } else {
+              navMain.classList.add('main-nav--closed');
+              navMain.classList.remove('main-nav--opened');
+            }
+          });
+        </script>
+    </div>
+  </body>
+</html>

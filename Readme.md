@@ -1,19 +1,12 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Kirill Sagan](https://up.htmlacademy.ru/adaptive/10/user/52663).
-* Наставник: `Неизвестно`.
+* Студент: [Kirill Sagan](https://up.htmlacademy.ru/adaptive/7/user/52663).
+* Наставник: [Макс Пушкарев](https://github.com/PushkarevMax).
 
 ---
 
-**Обратите внимание на файлы:**
-
-- [Specification.md](Specification.md) — техническое задание для вашего проекта. Прочтите его и следуйте требованиям.
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
---
-
 _Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`._
+_`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`._
 
 ---
 
@@ -57,5 +50,5 @@ git clone SSH-адрес_вашего_форка
 
 [travis-image]: https://travis-ci.org/htmlacademy-adaptive/52663-pink.svg?branch=master
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/52663-pink
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/52663-pink/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/52663-pink?type=dev
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/52663-pink.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/52663-pink

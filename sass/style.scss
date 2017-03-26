@@ -1,0 +1,24 @@
+@import "global/normalize";
+@import "global/fonts";
+@import "global/variables";
+@import "global/scaffolding";
+@import "global/mixins";
+@import "global/slider";
+@import "global/page-container";
+@import "blocks/header-blocks/page-header";
+@import "blocks/header-blocks/main-nav";
+@import "blocks/header-blocks/download";
+@import "blocks/main-blocks/index-page-intro";
+@import "blocks/main-blocks/features";
+@import "blocks/main-blocks/british-fact";
+@import "blocks/main-blocks/reviews";
+@import "blocks/main-blocks/services-package";
+@import "blocks/main-blocks/contacts";
+@import "blocks/main-blocks/competition-form";
+@import "blocks/main-blocks/map";
+
+@import "blocks/main-blocks/gallery";
+@import "blocks/main-blocks/photo-constructor";
+
+@import "blocks/footer-blocks/page-footer";
+@import "blocks/footer-blocks/social-links";

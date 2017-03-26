@@ -1,0 +1,338 @@
+.photo-constructor {
+  background-color: $bg-grey;
+}
+
+.photo-constructor__form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-constructor__tools {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.photo-constructor__control {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: 28px;
+  button {
+    padding: 0;
+    min-width: 48px;
+    background: none;
+    margin-bottom: 25px;
+
+    &:hover {
+        svg {
+            fill: $icon;
+        }
+    }
+  }
+  svg {
+    fill: $icon-hover;
+  }
+}
+.photo-constructor__control .active {
+    svg {
+        fill: $pink;
+    }
+}
+
+.photo-constructor__constructor-object {
+  margin-bottom: 40px;
+}
+
+.photo-constructor__pruning {
+}
+
+.photo-constructor__colors {
+  margin-right: -10px;
+}
+
+.photo-constructor__contrast {
+}
+
+.photo-constructor__btn-post {
+  background: none;
+  width: 100%;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  padding: 15px 35px;
+  text-decoration: none;
+  color: $pink;
+  border: 2px solid $pink;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  display: block;
+  margin-top: 38px;
+  margin-bottom: 15px;
+
+  &:hover {
+      background-color: $pink;
+      color: $white;
+  }
+
+  &:focus {
+      color: rgba(255,255,255,0.3);
+  }
+}
+
+.photo-constructor__btn-cancel{
+  background: none;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  padding: 15px;
+  width: 100%;
+  color: #dddfe0;
+  border: 2px solid #dddfe0;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  display: block;
+
+  &:hover {
+      border-color: $canel-border-hover;
+      color: $cancel-text-hover;
+  }
+
+  &:focus {
+      background: $canel-border-hover;
+  }
+}
+
+.photo-constructor__range-controls {
+  display: none;
+  margin: auto;
+
+  &.active {
+      display: flex;
+  }
+}
+
+.range-slider {
+
+  &.range-slider--common {
+    width: 240px;
+  }
+
+  &.range-slider--self {
+    width: 205px;
+    margin-left: 30px;
+    padding: 0;
+
+    @media #{$mobile-only} {
+      display: none;
+    }
+
+    @media #{$tablet} {
+      margin-left: 30px;
+    }
+
+    @media #{$desktop} {
+      width: 295px;
+      margin-left: 55px;
+    }
+  }
+
+  &,
+  &::-webkit-slider-runnable-track,
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  margin: 0 auto;
+  width: 240px;
+  height: 18px;
+  background: none;
+  cursor: pointer;
+  &::-webkit-slider-runnable-track {
+    @include track();
+  }
+  &::-moz-range-track {
+    @include track();
+  }
+  &::-ms-track {
+    border: none;
+    @include track();
+    color: transparent;
+  }
+  &::-ms-fill-lower, &::-ms-tooltip {
+    display: none;
+  }
+  &::-ms-thumb {
+    @include thumb();
+  }
+  &::-webkit-slider-thumb {
+    margin-top: -6px;
+    @include thumb();
+  }
+  &::-moz-range-thumb {
+    @include thumb();
+  }
+}
+
+@media #{$tablet} {
+    .photo-constructor__form {
+        flex-direction: row;
+        padding-top: 55px;
+        padding-bottom: 55px;
+        justify-content: space-between;
+    }
+
+    .photo-constructor__tools {
+        max-width: 45%;
+    }
+
+    .range-slider.range-slider--common {
+        width: 100%;
+    }
+
+    .photo-constructor__constructor-object {
+        margin-bottom: 0;
+        min-width: 300px;
+    }
+    .photo-constructor__control {
+        position: relative;
+        padding: 0;
+        margin-top: -15px;
+    }
+    .photo-constructor__range-controls {
+        display: flex;
+        padding: 30px 18px 30px 54px;
+        border-bottom: 1px solid #c0c0c0;
+        width: 100%;
+    }
+    .photo-constructor__buttons-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .photo-constructor__control {
+        border-bottom: 0;
+        margin-bottom: 60px;
+
+        button {
+            position: absolute;
+            margin-bottom: 0;
+            text-align: left;
+            left: 0;
+
+            &:hover {
+                svg {
+                    fill: $pink;
+                }
+            }
+        }
+        svg {
+            fill: $pink;
+            max-height: 25px;
+            width: auto;
+        }
+    }
+    .photo-constructor__pruning {
+        top: 25px;
+    }
+    .photo-constructor__contrast {
+        top: 188px;
+        svg {
+            max-height: 20px;
+        }
+    }
+    .photo-constructor__colors {
+        top: 105px;
+    }
+}
+
+@media #{$desktop} {
+    .gallery-slogan--top {
+        padding: 95px 170px 90px;
+    }
+    .gallery__item {
+        width: 32%;
+    }
+    .gallery__item--panorama {
+        margin-bottom: 50px;
+        width: 100%;
+
+        .gallery__photo {
+            &::before {
+                top: 55px;
+                right: 56px;
+            }
+            &::after {
+                right: 56px;
+            }
+        }
+        .gallery__content-wrapper {
+            padding: 25px;
+            min-height: auto;
+        }
+        .gallery__item-footer {
+            text-align: right;
+        }
+    }
+    .gallery-slogan--bottom {
+        padding: 60px 40px;
+    }
+}
+
+@media #{$desktop} {
+    .photo-constructor__tools {
+        max-width: 48%;
+    }
+    .photo-constructor__range-controls {
+        padding-left: 92px;
+        padding-right: 30px;
+    }
+    .photo-constructor__control {
+        margin-bottom: 130px;
+
+        button {
+
+        }
+        svg {
+            max-height: 50px;
+        }
+    }
+    .photo-constructor__pruning {
+        top: 15px;
+    }
+    .photo-constructor__contrast {
+        top: 180px;
+    }
+    .photo-constructor__colors {
+        top: 95px;
+    }
+    .photo-constructor__buttons-wrapper {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        justify-content: space-between;
+
+        input,
+        button {
+            width: 45%;
+        }
+    }
+    .photo-constructor__btn-post {
+        margin: 0;
+        padding: 15px 0;
+    }
+    .photo-constructor__btn-cancel {
+        margin: 0;
+    }
+}
