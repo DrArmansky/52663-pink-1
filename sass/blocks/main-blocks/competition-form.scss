@@ -22,7 +22,7 @@
   }
 }
 
-.competition-form__head-rule {
+.head-rule__content {
   font-size: 14px;
   line-height: 30px;
   color: $light-blue;
@@ -42,7 +42,7 @@
   }
 }
 
-.competition-form__rule-ask {
+.head-rule__ask {
   display: none;
 
   @media #{$tablet} {

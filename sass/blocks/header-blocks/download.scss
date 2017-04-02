@@ -1,5 +1,4 @@
 .download {
-  margin-top: 460px;
   padding: 30px 0px;
   width: 100%;
   color: $white;
@@ -11,9 +10,11 @@
   @media #{$tablet} {
     background: none;
     padding: 110px 5%;
-    margin-top: 105px;
+    position: absolute;
+    top: -600px;
   }
   @media #{$desktop} {
+    top: -700px;
     padding: 125px 5%px;
   }
 }

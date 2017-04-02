@@ -80,6 +80,7 @@
 
 .main-nav--opened {
   background-color: $bg-light-blue;
+  z-index: 2;
 
   @media #{$desktop} {
     background-color: rgba(0, 0, 0, 0.35);
@@ -141,6 +142,7 @@
   box-shadow: 0 1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   text-align: center;
   cursor: pointer;
+  display: flex;
 
   a {
     text-decoration: none;
@@ -209,4 +211,36 @@
         }
     }
   }
+}
+
+.main-nav--nojs {
+    position: relative;
+    background-color: $bg-light-blue;
+
+    .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav__item {
+        display: flex;
+    }
+}
+
+.main-nav--nojs.main-nav--index {
+    margin-bottom: 460px;
+}
+
+@media #{$tablet} {
+    .main-nav--nojs.main-nav--index {
+        margin-bottom: 630px;
+    }
+}
+
+@media #{$desktop} {
+    .main-nav--nojs {
+        background: rgba(0, 0, 0, 0.35);
+    }
+    .main-nav--nojs.main-nav--index {
+        margin-bottom: 0;
+    }
 }
