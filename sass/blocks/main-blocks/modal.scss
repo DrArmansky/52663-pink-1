@@ -1,0 +1,64 @@
+.modal {
+    position: fixed;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 320px;
+    padding: 45px 20px 50px;
+    background-color: $white;
+    text-align: center;
+    box-shadow: 0px 20px 50px -20px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+}
+
+.modal__title {
+    font-size: 18px;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.modal__content {
+    margin-bottom: 40px
+}
+
+.modal__button {
+    font-size: 18px;
+    background-color: $green;
+    display: block;
+    line-height: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 2px;
+    text-align: center;
+    width: 100%;
+
+    &:hover {
+        background-color: #1c9b5e;
+    }
+    &:focus {
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.modal--success {
+    padding-bottom: 0px;
+
+    .modal__content {
+        margin-bottom: 30px;
+    }
+
+    .modal__button-wrapper {
+        padding: 48px 20px 52px;
+        width: 320px;
+        margin-left: -20px;
+        box-sizing: border-box;
+        background-color: $bg-grey;
+    }
+}
+
+@media #{$tablet} {
+    
+}
