@@ -2,7 +2,7 @@
   position: relative;
   background: $white;
   padding: 0px 5%;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   text-align: center;
 
   @media #{$tablet} {
@@ -19,7 +19,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding: 50px 0 30px;
+  padding: 43px 0 33px;
 
   @media #{$desktop} {
     padding: 0;
@@ -37,6 +37,7 @@
 .reviews-slide__wrapper {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .reviews-slide__auhor-name {
@@ -67,7 +68,6 @@
   color: $light-blue;
   font-size: 14px;
   line-height: 30px;
-  padding: 0 20px;
 
   @media #{$tablet} {
     order: 1;

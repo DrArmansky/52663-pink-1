@@ -2,7 +2,7 @@
   text-align: center;
   background: url("../img/bg-triangle-white.svg") no-repeat center top $bg-grey;
   background-size: 105% auto;
-  padding: 85px 5% 40px;
+  padding: 91px 5% 36px;
 
   @media #{$tablet} {
     padding: 90px 5% 70px;
@@ -78,14 +78,18 @@
   text-align: center;
   font-size: 18px;
   line-height: 30px;
-  padding: 22px 0px;
+  padding: 18px 0px;
   text-transform: uppercase;
+
+  h3 {
+      font-size: 18px;
+  }
 
   &--hit::before  {
     content: "";
     position: absolute;
-    width: 75px;
-    height: 75px;
+    width: 72px;
+    height: 72px;
     left: 0;
     top: 0;
     background: url("../img/bg-hit.png") no-repeat left top;
@@ -100,14 +104,14 @@
   &--hit::after {
     content: "Хит";
     position: absolute;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 30px;
     transform: rotate(-45deg);
     width: 75px;
     height: 20px;
-    left: -15px;
-    top: 15px;
+    left: -19px;
+    top: 13px;
 
     @media #{$tablet} {
       left: -20px;
@@ -143,7 +147,7 @@
 .services-package__service {
   color: $light-blue;
   background: $white;
-  padding: 13px 42px;
+  padding: 14px 22px;
   text-align: left;
   font-size: 14px;
   line-height: 30px;
@@ -161,8 +165,8 @@
     border-left: 3px solid #3dc644;
     border-bottom: 3px solid #3dc644;
     position: absolute;
-    top: 16px;
-    right: 35px;
+    top: 14px;
+    right: 16px;
     transform: rotate(-45deg);
     box-shadow: none;
 
@@ -184,8 +188,8 @@
       height: 3px;
       background: #f25b26;
       position: absolute;
-      top: 26px;
-      right: 35px;
+      top: 27px;
+      right: 15px;
 
         @media #{$tablet} {
           top: 20px;

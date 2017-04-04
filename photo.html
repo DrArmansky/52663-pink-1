@@ -5,6 +5,11 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
 
   <body>
@@ -44,9 +49,9 @@
           <section class="gallery block-wrapper">
             <article class="gallery__item gallery__item--panorama">
               <picture class="gallery__photo">
-                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
-                <source media="(min-width: 640px)" srcset="img/panorama-tablet@1x.jpg">
-                <img src="img/panorama-mobile@1x.jpg" alt="Panorama">
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 640px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@1x.jpg 2x">
+                <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Panorama">
               </picture>
               <div class="gallery__content-wrapper">
               <header class="gallery__item-header">
@@ -60,9 +65,9 @@
             </article>
             <article class="gallery__item">
               <picture class="gallery__photo">
-                <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg">
-                <source media="(min-width: 640px)" srcset="img/photo-1-tablet@1x.jpg">
-                <img src="img/photo-1-mobile@1x.jpg" alt="Car">
+                <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 640px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Car">
               </picture>
               <div class="gallery__content-wrapper">
               <header class="gallery__item-header">
@@ -76,9 +81,9 @@
             </article>
             <article class="gallery__item">
                 <picture class="gallery__photo">
-                  <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg">
-                  <source media="(min-width: 640px)" srcset="img/photo-2-tablet@1x.jpg">
-                  <img src="img/photo-2-mobile@1x.jpg" alt="Drum">
+                  <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 640px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@1x.jpg 2x" alt="Drum">
                 </picture>
               <div class="gallery__content-wrapper">
               <header class="gallery__item-header">
@@ -92,9 +97,9 @@
             </article>
             <article class="gallery__item">
                 <picture class="gallery__photo">
-                  <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg">
-                  <source media="(min-width: 640px)" srcset="img/photo-3-tablet@1x.jpg">
-                  <img src="img/photo-3-mobile@1x.jpg" alt="Window">
+                  <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 640px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg" alt="Window">
                 </picture>
               <div class="gallery__content-wrapper">
               <header class="gallery__item-header">
@@ -108,9 +113,9 @@
             </article>
             <article class="gallery__item">
                 <picture class="gallery__photo">
-                  <source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg">
-                  <source media="(min-width: 640px)" srcset="img/photo-4-tablet@1x.jpg">
-                  <img src="img/photo-4-mobile@1x.jpg" alt="Market">
+                  <source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 640px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Market">
                 </picture>
               <div class="gallery__content-wrapper">
               <header class="gallery__item-header">
@@ -124,9 +129,9 @@
             </article>
             <article class="gallery__item">
                 <picture class="gallery__photo">
-                  <source media="(min-width: 960px)" srcset="img/photo-5-desktop@1x.jpg">
-                  <source media="(min-width: 640px)" srcset="img/photo-5-tablet@1x.jpg">
-                  <img src="img/photo-5-mobile@1x.jpg" alt="Rock">
+                  <source media="(min-width: 960px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@1x.jpg 2x">
+                  <source media="(min-width: 640px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                  <img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Rock">
                 </picture>
               <div class="gallery__content-wrapper">
               <header class="gallery__item-header">
@@ -140,9 +145,9 @@
             </article>
             <article class="gallery__item">
                 <picture class="gallery__photo">
-                  <source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg">
-                  <source media="(min-width: 640px)" srcset="img/photo-6-tablet@1x.jpg">
-                  <img src="img/photo-6-mobile@1x.jpg" alt="Flight">
+                  <source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 640px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                  <img src="img/photo-6-mobile@1x.jpg" srcset="photo-6-mobile@2x.jpg 2x" alt="Flight">
                 </picture>
               <div class="gallery__content-wrapper">
               <header class="gallery__item-header">
@@ -164,9 +169,9 @@
           <section class="photo-constructor">
             <form class="photo-constructor__form block-wrapper">
                 <picture class="gallery__photo">
-                    <source media="(min-width: 960px)" srcset="img/photo-7-desktop@1x.jpg">
-                    <source media="(min-width: 640px)" srcset="img/photo-7-tablet@1x.jpg">
-                    <img  class="photo-constructor__constructor-object" src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Winter">
+                    <source media="(min-width: 960px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+                    <source media="(min-width: 640px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+                    <img  class="photo-constructor__constructor-object" src="img/photo-7-mobile@1x.jpg" src="img/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Winter">
                 </picture>
               <fieldset class="photo-constructor__tools">
                 <div class="photo-constructor__control">

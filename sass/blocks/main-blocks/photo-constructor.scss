@@ -26,6 +26,9 @@
   flex-wrap: wrap;
   border-bottom: 1px solid #c0c0c0;
   padding-bottom: 28px;
+  input {
+      padding: 0;
+  }
   button {
     padding: 0;
     min-width: 48px;

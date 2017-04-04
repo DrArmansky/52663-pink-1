@@ -18,6 +18,12 @@
   }
 }
 
+.gallery__photo {
+    img {
+        width: 100%;
+    }
+}
+
 .gallery__item {
   display: flex;
   flex-direction: column;
@@ -32,9 +38,7 @@
   padding: 15px;
   padding-top: 14px;
   background-color: $bg-grey;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: block;
   p {
     font-size: 14px;
     line-height: 24px;
