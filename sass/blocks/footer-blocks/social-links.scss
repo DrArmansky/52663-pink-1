@@ -1,6 +1,10 @@
 .social-links {
   text-align: center;
 
+  @media #{$tablet} {
+    margin-left: -18px;
+  }
+
   @media #{$mobile-only} {
     margin-bottom: 32px;
   }
@@ -13,7 +17,7 @@
   height: 50px;
   border: 2px solid $dark-grey;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 6px;
   background: no-repeat center;
   position: relative;
 

@@ -8,7 +8,7 @@
   margin: 0 auto;
 
   @media #{$tablet} {
-    padding: 40px 5%;
+    padding: 32px 5%;
   }
 
   @media #{$desktop} {
@@ -20,7 +20,9 @@
 .page-footer__app-logo {
   text-align: center;
   margin: 0;
-  margin-bottom: 15px;
+  margin-top: 3px;
+  margin-left: 5px;
+  margin-bottom: 11px;
   height: 41px;
 
   @media #{$mobile-only} {
@@ -42,8 +44,10 @@
 }
 
 .page-footer__copyright-link {
-  font-size: 14px;
-  line-height: 18px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 4px;
+    margin-top: 8px;
 
   &:hover {
       .page-footer__copyright-logo {

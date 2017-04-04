@@ -26,7 +26,7 @@
   box-sizing: border-box;
 
   @media #{$tablet} {
-    padding: 34px 5%;
+    padding: 41px 6%;
   }
 
   @media #{$desktop} {
@@ -37,6 +37,10 @@
 .main-nav__logo picture {
   display: flex;
   align-items: flex-end;
+
+  @media #{$tablet} {
+    margin-top: -13px;
+  }
 }
 
 .main-nav__app-name {

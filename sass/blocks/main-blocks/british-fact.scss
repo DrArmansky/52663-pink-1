@@ -1,6 +1,6 @@
 .british-fact {
   position: relative;
-  padding: 58px 5% 0px;
+  padding: 58px 5% 44px;
   background: $white;
 
   @media #{$mobile-only} {
@@ -20,15 +20,18 @@
 .british-fact__wrapper {
   display: flex;
   justify-content: flex-end;
-  background: url(../img/research-bgr.svg)20% 55px no-repeat;
-  background-size: 260px 100%;
-  background-position: inherit;
+  background: url(../img/research-bgr.svg) 4px -41px no-repeat;
+  background-size: 243px 125%;
   width: 100%;
 }
 
+.british-fact__wrapper.block-wrapper {
+    padding: 0 18px;
+}
+
 .british-fact-content {
-  padding: 40px 0px;
-  width: 48%;
+  padding: 38px 0px;
+  width: 50%;
 
   @media #{$desktop} {
     padding-top: 80px;
@@ -39,7 +42,8 @@
 .british-fact-header {
   font-size: 30px;
   line-height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
+  padding-right: 128px;
 
   @media #{$desktop} {
     line-height: 30px;
@@ -49,7 +53,7 @@
 .british-fact-text {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 
   @media #{$desktop} {
     font-size: 18px;

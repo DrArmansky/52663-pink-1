@@ -6,7 +6,7 @@
   text-align: center;
 
   @media #{$tablet} {
-    padding-bottom: 20px;
+    padding-bottom: 6px;
   }
 
   @media #{$desktop} {
@@ -20,6 +20,10 @@
   margin: 0;
   padding: 0;
   padding: 43px 0 33px;
+
+  @media #{$tablet} {
+    padding: 43px 0 23px;
+  }
 
   @media #{$desktop} {
     padding: 0;
@@ -50,6 +54,9 @@
 
   @media #{$tablet} {
     order: 2;
+    div {
+        font-size: 20px;
+    }
   }
 }
 
@@ -72,7 +79,7 @@
   @media #{$tablet} {
     order: 1;
     font-size: 18px;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     padding: 0px;
   }
 

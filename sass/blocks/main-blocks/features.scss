@@ -30,7 +30,7 @@
   box-sizing: border-box;
 
   @media #{$tablet} {
-  padding-top: 80px;
+  padding-top: 82px;
   width: 50%;
   }
 
@@ -55,6 +55,7 @@
   @media #{$tablet} {
     text-align: left;
     padding: 0px;
+    margin-bottom: 43px;
   }
 
   @media #{$desktop} {
@@ -107,8 +108,8 @@
 
 
   @media #{$tablet} {
-    width: 265px;
-    top: 5%;
+    width: 277px;
+    top: 5px;
     margin: 0px;
   }
 

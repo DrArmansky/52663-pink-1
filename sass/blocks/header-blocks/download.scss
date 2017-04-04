@@ -9,7 +9,7 @@
 
   @media #{$tablet} {
     background: none;
-    padding: 110px 5%;
+    padding: 75px 0;
     position: absolute;
     top: -600px;
   }
@@ -33,6 +33,7 @@
   @media #{$tablet} {
     width: 300px;
     margin: 0;
+    padding-left: 40px;
   }
 }
 
@@ -72,6 +73,10 @@
   &:focus {
     background: $white;
     color: rgba(210,40,86,0.3);
+  }
+
+  @media #{$tablet} {
+    margin-bottom: 52px;
   }
 
   @media #{$desktop} {

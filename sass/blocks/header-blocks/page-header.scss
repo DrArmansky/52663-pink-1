@@ -77,24 +77,25 @@
                         $bg-light-blue url("../img/bg-back-mobile@1x.jpg") bottom no-repeat;
 
     @media #{$retina} {
-      background: url("../img/iphone-hand-mobile@2x.png") 0% 101% no-repeat,
+      background: url("../img/iphone-hand-mobile@2x.png") 0% 100% no-repeat,
                           $bg-light-blue url("../img/bg-back-mobile@2x.jpg") bottom no-repeat;
-      background-size: 258px auto, 800px auto;
+      background-size: 258px auto, 705px auto;
     }
 
     @media #{$tablet} {
-        min-height: 730px;
+        min-height: 729px;
         align-items: flex-start;
         background: none;
         background: url("../img/iphone-hand-tablet@1x.png") 50% 100% no-repeat,
                              $bg-light-blue url("../img/bg-back-tablet@1x.jpg") bottom no-repeat;
 
         @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-            min-height: 730px;
+            min-height: 729px;
             align-items: flex-start;
             background: none;
             background: url("../img/iphone-hand-tablet@2x.png") 50% 100% no-repeat,
                                $bg-light-blue url("../img/bg-back-tablet@2x.jpg") bottom no-repeat;
+            background-size: 700px auto, 1200px auto;
         }
     }
 
