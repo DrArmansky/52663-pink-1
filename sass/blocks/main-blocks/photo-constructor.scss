@@ -4,10 +4,12 @@
 
 .photo-constructor__form {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 42px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .photo-constructor__tools {
@@ -31,9 +33,9 @@
   }
   button {
     padding: 0;
-    min-width: 48px;
+    width: 48px;
     background: none;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
     &:hover {
         svg {
@@ -52,14 +54,13 @@
 }
 
 .photo-constructor__constructor-object {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .photo-constructor__pruning {
 }
 
 .photo-constructor__colors {
-  margin-right: -10px;
 }
 
 .photo-constructor__contrast {
@@ -193,7 +194,7 @@
     .photo-constructor__form {
         flex-direction: row;
         padding-top: 55px;
-        padding-bottom: 55px;
+        padding-bottom: 48px;
         justify-content: space-between;
     }
 
@@ -216,17 +217,17 @@
     }
     .photo-constructor__range-controls {
         display: flex;
-        padding: 30px 18px 30px 54px;
+        padding: 28px 18px 24px 59px;
         border-bottom: 1px solid #c0c0c0;
         width: 100%;
     }
     .photo-constructor__buttons-wrapper {
-        width: 90%;
+        width: 92%;
         margin: 0 auto;
     }
     .photo-constructor__control {
         border-bottom: 0;
-        margin-bottom: 60px;
+        margin-bottom: 70px;
 
         button {
             position: absolute;
@@ -244,19 +245,24 @@
             fill: $pink;
             max-height: 25px;
             width: auto;
+            padding-left: 5px;
         }
     }
     .photo-constructor__pruning {
         top: 25px;
     }
     .photo-constructor__contrast {
-        top: 188px;
+        top: 169px;
         svg {
             max-height: 20px;
+            padding-left: 10px;
         }
     }
     .photo-constructor__colors {
-        top: 105px;
+        top: 98px;
+    }
+    .photo-constructor__btn-post {
+        margin-bottom: 28px;
     }
 }
 
@@ -304,9 +310,6 @@
     .photo-constructor__control {
         margin-bottom: 130px;
 
-        button {
-
-        }
         svg {
             max-height: 50px;
         }

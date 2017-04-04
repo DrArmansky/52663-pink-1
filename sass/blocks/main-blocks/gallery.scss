@@ -5,19 +5,6 @@
   font-size: 14px;
 }
 
-.gallery-slogan {
-  padding: 46px 15px;
-  margin: auto;
-  box-sizing: border-box;
-  &--bottom {
-    padding-top: 20px;
-  }
-  p {
-      line-height: 30px;
-      text-align: center;
-  }
-}
-
 .gallery__photo {
     img {
         width: 100%;
@@ -31,12 +18,11 @@
   background-color: $bg-grey;
   text-align: left;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .gallery__content-wrapper {
-  padding: 15px;
-  padding-top: 14px;
+  padding: 11px 15px 20px;
   background-color: $bg-grey;
   display: block;
   p {
@@ -117,45 +103,51 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 0 40px;
     }
-
-    .gallery-slogan {
-        padding: 95px 40px 75px;
-        p {
-            font-size: 18px;
-        }
-   }
 
    .gallery__item {
        width: 48%;
        margin: 0;
-       margin-bottom: 25px;
+       margin-bottom: 20px;
        position: relative;
    }
 
   .gallery__content-wrapper {
-        padding: 25px;
+        padding: 28px;
         padding-bottom: 50px;
+        padding-top: 18px;
         position: relative;
         height: 100%;
         justify-content: flex-start;
-        min-height: 150px;
         box-sizing: border-box;
+        min-height: 150px;
     }
     .gallery__item-footer {
       position: absolute;
       padding-left: 0;
-      bottom: 25px;
+      bottom: 21px;
       width: 83%;
 
       &::before {
-        right: 0;
+        right: 6px;
+        bottom: 4px;
         left: auto;
       }
     }
 
     .gallery__item--panorama {
          width:  100%;
+         margin-bottom: 49px;
+         min-height: auto;
+
+        .gallery__content-wrapper {
+            padding: 28px;
+            padding-bottom: 18px;
+            padding-top: 16px;
+            min-height: auto;
+
+        }
 
         .gallery__photo {
               width: 113%;
@@ -172,25 +164,22 @@
         }
 
         .gallery__item-footer {
-            top: 25px;
+            top: 17px;
             right: 25px;
             width: auto;
             min-width: 17%;
             bottom: auto;
-            padding-right: 25px;
+            padding-right: 19px;
 
             &::before {
                 left: auto;
-                right: 0;
+                right: 2px;
+                top: 6px;
             }
         }
 
         .gallery__item-header {
             padding-right: 30%;
         }
-    }
-
-    .gallery-slogan--bottom {
-        padding: 45px 40px 70px;
     }
 }

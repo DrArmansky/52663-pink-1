@@ -1,0 +1,25 @@
+.gallery-slogan {
+  padding: 47px 15px;
+  margin: auto;
+  box-sizing: border-box;
+  &--bottom {
+    padding: 24px 12px 40px;
+  }
+  p {
+      line-height: 30px;
+      text-align: center;
+  }
+}
+
+@media #{$tablet} {
+    .gallery-slogan {
+        padding: 93px 70px 75px;
+        p {
+            font-size: 18px;
+        }
+   }
+
+   .gallery-slogan--bottom {
+       padding: 45px 40px 70px;
+   }
+}

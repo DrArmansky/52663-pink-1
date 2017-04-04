@@ -29,10 +29,10 @@
     }
 
     &--photo {
-        margin: 100px auto 80px;
+        margin: 97px auto 80px;
 
         @media #{$tablet} {
-            margin: 185px auto 140px;
+            margin: 176px auto 140px;
             width: 400px;
         }
         @media #{$desktop} {
@@ -47,8 +47,8 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background: url("../img/bg-back-mobile@2x.jpg") bottom no-repeat;
-      background-size: 1200px auto;
-      background-position: center -50px;
+      background-size: 700px auto;
+      background-position: center -2px;
   }
 
   @media #{$tablet} {
@@ -60,6 +60,8 @@
       align-items: flex-start;
       background: none;
       background: url("../img/bg-back-tablet@2x.jpg") bottom no-repeat;
+      background-size: 1200px auto;
+      background-position: center -2px;
     }
   }
   @media #{$desktop} {
