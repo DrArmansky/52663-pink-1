@@ -15,7 +15,7 @@
   }
   @media #{$desktop} {
     top: -700px;
-    padding: 125px 5%px;
+    padding: 65px 5% 20px;
   }
 }
 
@@ -34,6 +34,9 @@
     width: 300px;
     margin: 0;
     padding-left: 40px;
+  }
+  @media #{$desktop} {
+    padding-left: 0;
   }
 }
 
@@ -55,7 +58,7 @@
   @media #{$desktop} {
     font-size: 50px;
     width: 300px;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
   }
 }
 
@@ -80,7 +83,7 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 45px;
+    margin-bottom: 75px;
   }
 }
 
@@ -93,6 +96,9 @@
 
   @media #{$tablet} {
     margin-bottom: 40px;
+  }
+  @media #{$desktop} {
+    margin-bottom: 54px;
   }
 }
 

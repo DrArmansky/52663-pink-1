@@ -3,8 +3,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  // padding: 55px 5%;
-  max-width: 920px;
+  max-width: 940px;
   margin: 0 auto;
 
   @media #{$tablet} {
@@ -12,18 +11,25 @@
   }
 
   @media #{$desktop} {
-    padding: 73px 5%;
+    padding: 68px 0;
   }
 
 }
 
 .page-footer__app-logo {
-  text-align: center;
-  margin: 0;
-  margin-top: 3px;
-  margin-left: 5px;
-  margin-bottom: 11px;
-  height: 41px;
+    text-align: center;
+    margin: 0;
+    height: 41px;
+
+  @media #{$tablet} {
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-bottom: 11px;
+  }
+
+  @media #{$desktop} {
+      margin-left: 0;
+  }
 
   @media #{$mobile-only} {
     margin-bottom: 40px;
@@ -46,8 +52,6 @@
 .page-footer__copyright-link {
     font-size: 14px;
     line-height: 18px;
-    margin-right: 4px;
-    margin-top: 8px;
 
   &:hover {
       .page-footer__copyright-logo {
@@ -59,6 +63,11 @@
       .page-footer__copyright-logo {
           opacity: 0.3;
       }
+  }
+
+  @media #{$desktop} {
+      margin-right: 4px;
+      margin-top: 8px;
   }
 }
 

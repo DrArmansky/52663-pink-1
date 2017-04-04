@@ -19,7 +19,7 @@
 
   @media #{$desktop} {
     flex-direction: column;
-    padding: 0px 5%;
+    padding: 0px;
   }
 }
 
@@ -38,7 +38,7 @@
     flex-direction: row;
     order: 2;
     justify-content: space-between;
-    padding: 0 5%;
+    padding: 0 3%;
     width: auto;
   }
 }
@@ -50,6 +50,11 @@
   p {
     font-size: 14px;
     line-height: 24px;
+
+    @media #{$desktop} {
+        font-size: 18px;
+        line-height: 29px;
+    }
   }
 
   @media #{$tablet} {
@@ -61,7 +66,13 @@
   @media #{$desktop} {
     text-align: center;
     margin: 0;
-    width: 24%;
+    width: 28%;
+  }
+
+  &:last-child .features-item__tittle {
+    @media #{$desktop} {
+        padding: 0 3px;
+    }
   }
 }
 
@@ -71,8 +82,9 @@
   margin-bottom: 18px;
 
   @media #{$desktop} {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 30px;
+    margin-bottom: 28px;
   }
 }
 
@@ -90,7 +102,7 @@
     width: 100%;
     justify-content: space-around;
     margin: 0 auto;
-    padding-bottom: 58px;
+    padding-bottom: 46px;
   }
 }
 
@@ -124,6 +136,6 @@
   display: none;
 
   @media #{$desktop} {
-    display: inline;
+    display: inline-block;
   }
 }

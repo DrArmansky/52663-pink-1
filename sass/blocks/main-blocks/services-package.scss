@@ -9,7 +9,7 @@
   }
 
   @media #{$desktop} {
-    padding: 120px 5% 96px;
+    padding: 151px 5% 96px;
   }
 }
 
@@ -87,6 +87,9 @@
       @media #{$tablet} {
         font-size: 16px;
       }
+      @media #{$desktop} {
+        font-size: 16px;
+      }
   }
 
   &--hit::before  {
@@ -102,6 +105,10 @@
     @media #{$tablet} {
       width: 60px;
       height: 60px;
+    }
+    @media #{$desktop} {
+      width: 80px;
+      height: 74px;
     }
   }
 
@@ -120,6 +127,10 @@
     @media #{$tablet} {
       left: -20px;
       top: 8px;
+    }
+    @media #{$desktop} {
+      left: -17px;
+      top: 13px;
     }
   }
 
@@ -143,7 +154,7 @@
   }
 
   @media #{$desktop} {
-    padding: 24px 0px;
+    padding: 18px 0px;
     font-size: 16px;
   }
 }

@@ -13,7 +13,7 @@
 
   @media #{$desktop} {
     background: $bg-grey;
-    padding: 70px 5% 65px;
+    padding: 65px 5% 64px;
   }
 }
 
@@ -23,6 +23,11 @@
   background: url(../img/research-bgr.svg) 4px -41px no-repeat;
   background-size: 243px 125%;
   width: 100%;
+
+  @media #{$desktop} {
+    background: url(../img/research-bgr.svg) 3px -44px no-repeat;
+    background-size: 295px 125%;
+  }
 }
 
 .british-fact__wrapper.block-wrapper {
@@ -34,8 +39,11 @@
   width: 50%;
 
   @media #{$desktop} {
-    padding-top: 80px;
-    width: 65%;
+    padding: 95px 0px 50px;
+    width: 62%;
+    padding-left: 6px;
+    padding-right: 6px;
+    box-sizing: border-box;
   }
 }
 
@@ -47,6 +55,7 @@
 
   @media #{$desktop} {
     line-height: 30px;
+    margin-bottom: 24px;
   }
 }
 
@@ -58,10 +67,14 @@
   @media #{$desktop} {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 34px;
   }
 }
 
 .british-fact-link {
   color: $pink;
+
+  @media #{$desktop} {
+      font-size: 18px;
+  }
 }

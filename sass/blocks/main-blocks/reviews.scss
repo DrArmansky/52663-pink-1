@@ -10,8 +10,8 @@
   }
 
   @media #{$desktop} {
-    padding: 190px 0 45px;
-    background: url(../img/icon-quotes.svg) center 15% no-repeat;
+    padding: 186px 0 28px;
+    background: url(../img/icon-quotes.svg) center 21% no-repeat;
   }
 }
 
@@ -58,6 +58,11 @@
         font-size: 20px;
     }
   }
+  @media #{$desktop} {
+    div {
+        font-size: 24px;
+    }
+  }
 }
 
 .reviews-slide__info {
@@ -67,7 +72,10 @@
   display: none;
 
   @media #{$tablet} {
-    display: block
+    display: block;
+  }
+  @media #{$desktop} {
+    font-size: 18px;
   }
 }
 
@@ -84,7 +92,7 @@
   }
 
   @media #{$desktop} {
-    padding: 0px 15%;
+    padding: 0px 13%;
   }
 }
 
@@ -118,13 +126,13 @@
   }
 
   &--left {
-    left: 0;
+    left: 6px;
     border-top: none;
     border-right: none;
   }
 
   &--right {
-    right: 0;
+    right: 6px;
     border-bottom: none;
     border-left: none;
   }
