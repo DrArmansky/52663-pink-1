@@ -11,7 +11,7 @@
   }
 
   @media #{$desktop} {
-    padding: 68px 0;
+    padding: 95px 0;
   }
 
 }
@@ -88,4 +88,10 @@
   .page-footer__app-logo {
       margin-bottom: 31px;
   }
+}
+
+@media #{$desktop} {
+    .page-footer--clean {
+        padding: 68px 0;
+    }
 }

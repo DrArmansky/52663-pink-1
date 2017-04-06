@@ -183,3 +183,60 @@
         }
     }
 }
+
+@media #{$desktop} {
+
+    .gallery {
+        max-width: 1200px;
+        padding: 0 130px;
+    }
+
+    .gallery__item {
+        width: 32%;
+        margin-bottom: 52px;
+    }
+
+    .gallery__content-wrapper {
+        padding-top: 17px;
+    }
+
+    .gallery__item--panorama {
+        margin-bottom: 50px;
+        width: 100%;
+
+        .gallery__photo {
+            width: 128%;
+
+            &::before {
+                top: 54px;
+                right: 132px;
+            }
+            &::after {
+                right: 132px;
+                top: 60px;
+            }
+        }
+
+        .gallery__item-footer {
+            padding-right: 37px;
+            text-align: right;
+        }
+
+        .gallery__content-wrapper {
+            padding: 15px 25px;
+        }
+    }
+
+    .gallery-slogan--bottom {
+        padding: 4px 40px 66px;
+    }
+
+    .gallery__item-footer {
+        bottom: 23px;
+
+        &:before {
+            right: 7px;
+            bottom: 5px;
+        }
+    }
+}

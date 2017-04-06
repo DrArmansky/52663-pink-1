@@ -23,3 +23,9 @@
        padding: 45px 40px 70px;
    }
 }
+
+@media #{$desktop} {
+    .gallery-slogan--top {
+        padding: 92px 170px 88px;
+    }
+}
