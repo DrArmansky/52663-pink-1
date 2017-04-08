@@ -230,19 +230,10 @@
     }
 }
 
-.main-nav--nojs.main-nav--index {
-    margin-bottom: 460px;
-}
-
-@media #{$tablet} {
-    .main-nav--nojs.main-nav--index {
-        margin-bottom: 630px;
-    }
-}
-
 @media #{$desktop} {
     .main-nav--nojs {
         background: rgba(0, 0, 0, 0.35);
+        position: absolute;
     }
     .main-nav--nojs.main-nav--index {
         margin-bottom: 0;

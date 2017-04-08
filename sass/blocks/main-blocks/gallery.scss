@@ -6,6 +6,8 @@
 }
 
 .gallery__photo {
+    max-height: 187px;
+
     img {
         width: 100%;
     }
@@ -106,6 +108,10 @@
         padding: 0 20px;
     }
 
+    .gallery__photo {
+        max-height: 324px;
+    }
+
    .gallery__item {
        width: 48%;
        margin: 0;
@@ -151,6 +157,7 @@
 
         .gallery__photo {
               min-width: 700px;
+              max-height: none;
 
             &::before {
                 right: 40px;
