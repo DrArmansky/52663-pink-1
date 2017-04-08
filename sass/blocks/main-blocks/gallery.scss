@@ -196,6 +196,10 @@
         margin-bottom: 52px;
     }
 
+    .gallery__photo {
+        max-height: 348px;
+    }
+
     .gallery__content-wrapper {
         padding-top: 17px;
     }
@@ -206,6 +210,7 @@
 
         .gallery__photo {
             width: 128%;
+            max-height: 440px;
 
             &::before {
                 top: 54px;
