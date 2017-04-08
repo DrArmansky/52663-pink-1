@@ -18,6 +18,10 @@
   padding: 0px;
 }
 
+.photo-constructor__photo {
+    max-height: 420px;
+}
+
 .photo-constructor__control {
   display: flex;
   justify-content: space-around;
