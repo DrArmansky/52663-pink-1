@@ -1,38 +1,31 @@
 .reviews {
   position: relative;
   background: $white;
-  padding: 0px 5%;
-  padding-bottom: 30px;
+  padding: 0 5% 30px;
   text-align: center;
-
   @media #{$tablet} {
-    padding-bottom: 6px;
-    padding: 0px 20px;
+    padding: 0 20px;
   }
-
   @media #{$desktop} {
     padding: 186px 0 28px;
-    background: url(../img/icon-quotes.svg) center 21% no-repeat;
+    background: url("../img/icon-quotes.svg") center 21% no-repeat;
   }
 }
 
 .reviews__slides {
   list-style: none;
   margin: 0;
-  padding: 0;
   padding: 43px 0 33px;
-
   @media #{$tablet} {
     padding: 43px 0 23px;
   }
-
   @media #{$desktop} {
     padding: 0;
   }
 }
 
 .reviews__wrapper {
-    position: relative;
+  position: relative;
 }
 
 .reviews__slide {
@@ -52,16 +45,16 @@
   font-weight: bold;
   margin-bottom: 12px;
   font-style: normal;
-
   @media #{$tablet} {
     order: 2;
+
     div {
-        font-size: 20px;
+      font-size: 20px;
     }
   }
   @media #{$desktop} {
     div {
-        font-size: 24px;
+      font-size: 24px;
     }
   }
 }
@@ -71,7 +64,6 @@
   line-height: 30px;
   font-weight: normal;
   display: none;
-
   @media #{$tablet} {
     display: block;
   }
@@ -84,16 +76,14 @@
   color: $light-blue;
   font-size: 14px;
   line-height: 30px;
-
   @media #{$tablet} {
     order: 1;
     font-size: 18px;
     margin-bottom: 35px;
-    padding: 0px;
+    padding: 0;
   }
-
   @media #{$desktop} {
-    padding: 0px 13%;
+    padding: 0 13%;
   }
 }
 
@@ -115,15 +105,14 @@
   cursor: pointer;
 
   &:hover {
-      border-color: $dark-grey-hover;
+    border-color: $dark-grey-hover;
   }
 
   &:focus {
-      border-color: rgba(126,134,143,0.3);
+    border-color: rgba(126,134,143,0.3);
   }
-
   @media #{$desktop} {
-    display: block
+    display: block;
   }
 
   &--left {

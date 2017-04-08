@@ -2,15 +2,12 @@
   position: relative;
   padding: 58px 20px 44px;
   background: $white;
-
   @media #{$mobile-only} {
     display: none;
   }
-
   @media #{$tablet} {
     display: flex;
   }
-
   @media #{$desktop} {
     background: $bg-grey;
     padding: 65px 10px 64px;
@@ -20,25 +17,23 @@
 .british-fact__wrapper {
   display: flex;
   justify-content: flex-end;
-  background: url(../img/research-bgr.svg) no-repeat;
+  background: url("../img/research-bgr.svg") no-repeat;
   background-size: 241px 96%;
   width: 100%;
-
   @media #{$desktop} {
     background-size: 300px 100%;
   }
 }
 
 .british-fact__wrapper.block-wrapper {
-    padding: 0 14px;
+  padding: 0 14px;
 }
 
 .british-fact-content {
-  padding: 38px 0px;
+  padding: 38px 0;
   width: 50%;
-
   @media #{$desktop} {
-    padding: 95px 0px 50px;
+    padding: 95px 0 50px;
     width: 62%;
     padding-left: 6px;
     padding-right: 6px;
@@ -51,7 +46,6 @@
   line-height: 36px;
   margin-bottom: 9px;
   padding-right: 128px;
-
   @media #{$desktop} {
     line-height: 30px;
     margin-bottom: 24px;
@@ -62,7 +56,6 @@
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 11px;
-
   @media #{$desktop} {
     font-size: 18px;
     line-height: 30px;
@@ -72,8 +65,7 @@
 
 .british-fact-link {
   color: $pink;
-
   @media #{$desktop} {
-      font-size: 18px;
+    font-size: 18px;
   }
 }

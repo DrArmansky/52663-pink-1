@@ -1,14 +1,11 @@
 .social-links {
   text-align: center;
-
   @media #{$tablet} {
     margin-left: -18px;
   }
-
   @media #{$desktop} {
     margin-left: 10px;
   }
-
   @media #{$mobile-only} {
     margin-bottom: 31px;
   }
@@ -26,11 +23,11 @@
   position: relative;
 
   &:hover {
-      border-color: $light-blue;
+    border-color: $light-blue;
   }
 
   &:focus {
-      opacity: 0.3;
+    opacity: 0.3;
   }
 
   svg {
@@ -44,14 +41,14 @@
   }
 
   &.social-links__item--tw {
-     background-image: url('../img/icons/icon-twitter.svg');
-   }
+    background-image: url("../img/icons/icon-twitter.svg");
+  }
 
   &.social-links__item--fb {
-     background-image: url('../img/icons/icon-facebook.svg');
-   }
+    background-image: url("../img/icons/icon-facebook.svg");
+  }
 
   &.social-links__item--yt {
-     background-image: url('../img/icons/icon-youtube.svg');
-   }
+    background-image: url("../img/icons/icon-youtube.svg");
+  }
 }

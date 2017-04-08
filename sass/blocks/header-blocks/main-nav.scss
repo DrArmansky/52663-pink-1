@@ -24,20 +24,17 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-
   @media #{$tablet} {
     padding: 41px 20px;
   }
-
   @media #{$desktop} {
-    padding: 40px 0px;
+    padding: 40px 0;
   }
 }
 
 .main-nav__logo picture {
   display: flex;
   align-items: flex-end;
-
   @media #{$tablet} {
     margin-top: -13px;
   }
@@ -58,25 +55,24 @@
   height: 24px;
   position: relative;
 
-  &::before,
-  &::after {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
-    right: 0px;
+    right: 0;
     top: 10px;
     width: 50px;
     height: 4px;
     background-color: $white;
   }
-
   @media #{$desktop} {
     display: none;
   }
 }
 
 .main-nav__toggle:hover {
-  &::before,
-  &::after {
+  &::after,
+  &::before {
     background-color: $pink;
     border-color: $pink;
   }
@@ -85,21 +81,21 @@
 .main-nav--opened {
   background-color: $bg-light-blue;
   z-index: 2;
-
   @media #{$desktop} {
     background-color: rgba(0, 0, 0, 0.35);
   }
 }
 
 .main-nav--opened .main-nav__toggle {
-    &::before {
-      width: 27px;
-      transform: rotate(45deg);
-    }
-    &::after {
-      width: 27px;
-      transform: rotate(-45deg);
-    }
+  &::before {
+    width: 27px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    width: 27px;
+    transform: rotate(-45deg);
+  }
 }
 
 .main-nav--closed {
@@ -107,21 +103,18 @@
 
   .main-nav__item {
     display: none;
-
     @media #{$desktop} {
       display: flex;
     }
   }
 
   .main-nav__toggle::before {
-      box-shadow:  0 -10px 0 0 $white,
-                            0 10px 0 0 $white;
+    box-shadow: 0 -10px 0 0 $white, 0 10px 0 0 $white;
   }
 
   .main-nav__toggle:hover {
     &::before {
-        box-shadow:  0 -10px 0 0 $pink,
-                              0 10px 0 0 $pink;
+      box-shadow: 0 -10px 0 0 $pink, 0 10px 0 0 $pink;
     }
   }
 }
@@ -129,7 +122,6 @@
 .main-nav__items {
   display: flex;
   flex-direction: column;
-
   @media #{$desktop} {
     flex-direction: row;
     min-width: 70%;
@@ -157,85 +149,83 @@
   }
 
   &:hover {
-      a {
-          color: $pink;
-      }
+    a {
+      color: $pink;
+    }
   }
 
   a:focus {
-      color: rgba(210,40,86,0.3);
+    color: rgba(210,40,86,0.3);
   }
-
   @media #{$desktop} {
     text-transform: none;
     line-height: 18px;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     border: none;
     box-shadow: none;
 
     &:hover {
-        a {
-            color: $white;
-        }
+      a {
+        color: $white;
+      }
     }
 
     a {
-        &:active {
-            color: rgba(255,255,255, 0.3);
-        }
+      &:active {
+        color: rgba(255,255,255, 0.3);
+      }
 
-        &::before {
-            content: "";
-            position: absolute;
-            width: 75%;
-            height: 2px;
-            bottom: -4px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            background-color: $white;
-            visibility: hidden;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s;
-            transition: all 0.3s ease-in-out 0s;
-        }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 75%;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: $white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
 
+      &:hover::before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
 
-        &:hover::before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-        }
-
-        &:focus::before {
-            display: none;
-            background-color: rgba(255,255,255, 0.3);
-        }
+      &:focus::before {
+        display: none;
+        background-color: rgba(255,255,255, 0.3);
+      }
     }
   }
 }
 
 .main-nav--nojs {
-    position: relative;
-    background-color: $bg-light-blue;
+  position: relative;
+  background-color: $bg-light-blue;
 
-    .main-nav__toggle {
-        display: none;
-    }
+  .main-nav__toggle {
+    display: none;
+  }
 
-    .main-nav__item {
-        display: flex;
-    }
+  .main-nav__item {
+    display: flex;
+  }
 }
-
 @media #{$desktop} {
-    .main-nav--nojs {
-        background: rgba(0, 0, 0, 0.35);
-        position: absolute;
-    }
-    .main-nav--nojs.main-nav--index {
-        margin-bottom: 0;
-    }
+  .main-nav--nojs {
+    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
+  }
+
+  .main-nav--nojs.main-nav--index {
+    margin-bottom: 0;
+  }
 }

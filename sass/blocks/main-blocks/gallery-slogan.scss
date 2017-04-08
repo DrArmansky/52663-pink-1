@@ -2,34 +2,35 @@
   padding: 47px 15px;
   margin: auto;
   box-sizing: border-box;
+
   &--bottom {
     padding: 24px 12px 40px;
   }
+
   p {
-      line-height: 30px;
-      text-align: center;
+    line-height: 30px;
+    text-align: center;
   }
 }
-
 @media #{$tablet} {
-    .gallery-slogan {
-        padding: 93px 70px 75px;
-        p {
-            font-size: 18px;
-        }
-   }
+  .gallery-slogan {
+    padding: 93px 70px 75px;
 
-   .gallery-slogan--bottom {
-       padding: 45px 40px 70px;
-   }
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .gallery-slogan--bottom {
+    padding: 45px 40px 70px;
+  }
 }
-
 @media #{$desktop} {
-    .gallery-slogan--top {
-        padding: 92px 170px 88px;
-    }
+  .gallery-slogan--top {
+    padding: 92px 170px 88px;
+  }
 
-    .gallery-slogan--bottom {
-        padding: 7px 40px 66px;
-    }
+  .gallery-slogan--bottom {
+    padding: 7px 40px 66px;
+  }
 }

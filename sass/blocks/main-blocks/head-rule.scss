@@ -5,22 +5,19 @@
   text-align: center;
   padding: 45px 0 10px;
   box-sizing: border-box;
-
   @media #{$tablet} {
     width: auto;
     font-size: 18px;
     padding: 93px 60px 44px;
     order: 1;
   }
-
   @media #{$desktop} {
-      padding: 93px 90px 80px;
+    padding: 93px 90px 80px;
   }
 }
 
 .head-rule__ask {
   display: none;
-
   @media #{$tablet} {
     display: inline;
   }

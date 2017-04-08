@@ -1,6 +1,6 @@
 .features {
   text-align: center;
-  background: $bg-grey url("../img/bg-triangle-white.svg") no-repeat center 0%;
+  background: $bg-grey url("../img/bg-triangle-white.svg") no-repeat center 0;
   background-size: 105%;
   box-sizing: border-box;
 }
@@ -8,18 +8,16 @@
 .features__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 92px 0px 0px;
+  padding: 92px 0 0;
   position: relative;
-
   @media #{$tablet} {
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 0px 15px 0px;
+    padding: 0 15px;
   }
-
   @media #{$desktop} {
     flex-direction: column;
-    padding: 0px;
+    padding: 0;
   }
 }
 
@@ -28,12 +26,10 @@
   flex-direction: column;
   color: $black;
   box-sizing: border-box;
-
   @media #{$tablet} {
-  padding-top: 82px;
-  width: 50%;
+    padding-top: 82px;
+    width: 50%;
   }
-
   @media #{$desktop} {
     flex-direction: row;
     order: 2;
@@ -44,25 +40,21 @@
 }
 
 .features__item {
-  margin: auto;
-  margin-bottom: 39px;
+  margin: auto auto 39px;
 
   p {
     font-size: 14px;
     line-height: 24px;
-
     @media #{$desktop} {
-        font-size: 18px;
-        line-height: 29px;
+      font-size: 18px;
+      line-height: 29px;
     }
   }
-
   @media #{$tablet} {
     text-align: left;
-    padding: 0px;
+    padding: 0;
     margin-bottom: 43px;
   }
-
   @media #{$desktop} {
     text-align: center;
     margin: 0;
@@ -71,7 +63,7 @@
 
   &:last-child .features-item__tittle {
     @media #{$desktop} {
-        padding: 0 3px;
+      padding: 0 3px;
     }
   }
 }
@@ -80,7 +72,6 @@
   font-size: 18px;
   line-height: 10px;
   margin-bottom: 18px;
-
   @media #{$desktop} {
     font-size: 30px;
     line-height: 30px;
@@ -92,12 +83,9 @@
   display: flex;
   position: relative;
   padding-bottom: 279px;
-
-
   @media #{$tablet} {
     width: 50%;
   }
-
   @media #{$desktop} {
     width: 100%;
     justify-content: space-around;
@@ -117,14 +105,11 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-
-
   @media #{$tablet} {
     width: 277px;
     top: 5px;
-    margin: 0px;
+    margin: 0;
   }
-
   @media #{$desktop} {
     width: 294px;
     position: relative;
@@ -134,7 +119,6 @@
 
 .features__image:not(:last-of-type) {
   display: none;
-
   @media #{$desktop} {
     display: inline-block;
   }

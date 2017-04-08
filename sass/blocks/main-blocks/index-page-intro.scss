@@ -1,14 +1,11 @@
 .index-page-intro {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
-  padding-top: 43px;
-
+  padding: 43px 20px 0;
   @media #{$tablet} {
     padding-top: 50px;
     padding-bottom: 45px;
   }
-
   @media #{$desktop} {
     padding-top: 67px;
     padding-bottom: 78px;
@@ -22,21 +19,18 @@
   background-color: $white;
   text-align: center;
   font-weight: 300;
-
   @media #{$tablet} {
     font-size: 40px;
   }
-
   @media #{$desktop} {
     font-size: 50px;
   }
 
   &--phrase2 {
-  margin: 30px auto;
-
-  @media #{$tablet} {
-    width: 60%;
-    margin: 0px auto;
+    margin: 30px auto;
+    @media #{$tablet} {
+      width: 60%;
+      margin: 0 auto;
     }
   }
 }

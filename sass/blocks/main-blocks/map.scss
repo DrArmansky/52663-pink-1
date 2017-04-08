@@ -1,11 +1,9 @@
 .map {
   position: relative;
   min-height: 195px;
-
   @media #{$tablet} {
     min-height: 380px;
   }
-
   @media #{$desktop} {
     min-height: 483px;
   }
@@ -21,14 +19,11 @@
     border-left: 50vw solid transparent;
     box-sizing: border-box;
     top: -1px;
-
     @media #{$tablet} {
       border-top-width: 75px;
     }
-
     @media #{$desktop} {
       border-top-width: 85px;
     }
   }
-
 }
