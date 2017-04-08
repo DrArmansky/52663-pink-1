@@ -13,15 +13,15 @@
 
   @media #{$desktop} {
     background: $bg-grey;
-    padding: 65px 5% 64px;
+    padding: 65px 10px 64px;
   }
 }
 
 .british-fact__wrapper {
   display: flex;
   justify-content: flex-end;
-  background: url(../img/research-bgr.svg) 0px -40px no-repeat;
-  background-size: 241px 124%;
+  background: url(../img/research-bgr.svg) no-repeat;
+  background-size: 241px 96%;
   width: 100%;
 
   @media #{$desktop} {

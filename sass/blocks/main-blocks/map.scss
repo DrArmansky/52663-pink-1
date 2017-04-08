@@ -1,13 +1,13 @@
 .map {
   position: relative;
-  height: 195px;
+  min-height: 195px;
 
   @media #{$tablet} {
-    height: 380px;
+    min-height: 380px;
   }
 
   @media #{$desktop} {
-    height: 520px;
+    min-height: 483px;
   }
 
   &:before {
@@ -27,7 +27,7 @@
     }
 
     @media #{$desktop} {
-      border-top-width: 125px;
+      border-top-width: 85px;
     }
   }
 
