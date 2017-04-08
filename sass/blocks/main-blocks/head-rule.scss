@@ -1,0 +1,27 @@
+.head-rule__content {
+  font-size: 14px;
+  line-height: 30px;
+  color: $light-blue;
+  text-align: center;
+  padding: 45px 0 10px;
+  box-sizing: border-box;
+
+  @media #{$tablet} {
+    width: auto;
+    font-size: 18px;
+    padding: 95px 60px 65px;
+    order: 1;
+  }
+
+  @media #{$desktop} {
+      padding: 95px 90px 65px;
+  }
+}
+
+.head-rule__ask {
+  display: none;
+
+  @media #{$tablet} {
+    display: inline;
+  }
+}
