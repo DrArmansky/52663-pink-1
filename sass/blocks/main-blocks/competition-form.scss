@@ -218,6 +218,7 @@
         margin-bottom: 33px;
         background-color: $white;
         padding: 0 32px;
+        max-width: 440px;
     }
 
     .competition-form__block-wrapper {
@@ -238,13 +239,19 @@
     }
   }
   @media #{$desktop} {
-    max-height: 230px;
     padding: 41px 0px 20px 47px;
+
+    .competition-form__label-right {
+        margin-bottom: 0;
+    }
 
     .competition-form__block-wrapper {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
+        height: 165px;
+        box-sizing: border-box;
+        padding-bottom: 25px;
     }
   }
 }
@@ -278,6 +285,7 @@
       background: $white;
       width: auto;
       padding: 0 25px;
+      max-width: 250px;
     }
 
     .competition-form__label-up {

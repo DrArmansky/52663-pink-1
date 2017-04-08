@@ -1,93 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-      // Picture element HTML5 shiv
-      document.createElement( "picture" );
-    </script>
-    <script src="js/picturefill.min.js" async></script>
-  </head>
-  <body>
 
-    <header class="page-header page-header--clean">
-        <nav class="main-nav main-nav--closed main-nav--nojs main-nav--index">
-          <div class="main-nav__wrapper">
-            <div class="main-nav__logo">
-              <picture>
-                  <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                  <source media="(min-width: 640px)" srcset="img/logo-pink-white-tablet.svg">
-                  <img class="main-nav__app-name" width="75" height="22" src="img/logo-pink-white-mobile.svg"
-                  alt="Logo PINK">
-              </picture>
-              <button class="main-nav__toggle" type="button"></button>
-            </div>
-            <ul class="main-nav__items">
-              <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
-              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-              <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="header__wrapper"></div>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script>
+</head>
 
-    <main class="main-container">
-        <section class="download">
-          <div class="download__wrapper block-wrapper">
-          <div class="download__content">
-            <h1 class="download__slogan">Взгляните на жизнь иначе!</h1>
-            <a href="#" class="download__button">Скачать приложение</a>
-            <ul class="download__links">
-              <li class="download__platform-link download__platform-link--ios"><a href="#"></a></li>
-              <li class="download__platform-link download__platform-link--android"><a href="#"></a></li>
-              <li class="download__platform-link download__platform-link--windows"><a href="#"></a></li>
-            </ul>
-            <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
-          </div>
-        </section>
-      <div class="index-page-intro block-wrapper">
-        <p class="index-page-intro__slogan index-page-intro__slogan--phrase1">Устали от серости мегаполиса?</p>
-        <p class="index-page-intro__slogan index-page-intro__slogan--phrase2">Нам есть, что вам предложить!</p>
+<body>
+
+  <header class="page-header page-header--clean">
+    <nav class="main-nav main-nav--closed main-nav--nojs main-nav--index">
+      <div class="main-nav__wrapper">
+        <div class="main-nav__logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 640px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="main-nav__app-name" width="75" height="22" src="img/logo-pink-white-mobile.svg" alt="Logo PINK">
+          </picture>
+          <button class="main-nav__toggle" type="button"></button>
+        </div>
+        <ul class="main-nav__items">
+          <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
       </div>
+    </nav>
+    <div class="header__wrapper"></div>
+  </header>
 
-      <section class="features">
-        <div class="features__wrapper block-wrapper">
+  <main class="main-container">
+    <section class="download">
+      <div class="download__wrapper block-wrapper">
+        <div class="download__content">
+          <h1 class="download__slogan">Взгляните на жизнь иначе!</h1>
+          <a href="#" class="download__button">Скачать приложение</a>
+          <ul class="download__links">
+            <li class="download__platform-link download__platform-link--ios">
+              <a href="#"></a>
+            </li>
+            <li class="download__platform-link download__platform-link--android">
+              <a href="#"></a>
+            </li>
+            <li class="download__platform-link download__platform-link--windows">
+              <a href="#"></a>
+            </li>
+          </ul>
+          <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </section>
+    <div class="index-page-intro block-wrapper">
+      <p class="index-page-intro__slogan index-page-intro__slogan--phrase1">Устали от серости мегаполиса?</p>
+      <p class="index-page-intro__slogan index-page-intro__slogan--phrase2">Нам есть, что вам предложить!</p>
+    </div>
+
+    <section class="features">
+      <div class="features__wrapper block-wrapper">
         <div class="features__items">
-        <div class="features__item">
-          <h3 class="features-item__tittle">Поднимает настроение</h3>
-          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <div class="features__item">
+            <h3 class="features-item__tittle">Поднимает настроение</h3>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="features__item">
+            <h3 class="features-item__tittle">Меняет мир вокруг</h3>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="features__item">
+            <h3 class="features-item__tittle">Заводит новых друзей</h3>
+            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
         </div>
-        <div class="features__item">
-          <h3 class="features-item__tittle">Меняет мир вокруг</h3>
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="features__item">
-          <h3 class="features-item__tittle">Заводит новых друзей</h3>
-          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="features__images">
+          <picture class="features__image features__image--1">
+            <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+            <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Smartphone">
+          </picture>
+          <picture class="features__image features__image--2">
+            <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+            <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Smartphone">
+          </picture>
+          <picture class="features__image features__image--3">
+            <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+            <source media="(min-width: 640px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+            <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Smartphone">
+          </picture>
         </div>
       </div>
-    <div class="features__images">
-        <picture class="features__image features__image--1">
-          <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
-          <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Smartphone">
-        </picture>
-        <picture class="features__image features__image--2">
-          <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
-          <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Smartphone">
-        </picture>
-        <picture class="features__image features__image--3">
-          <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
-          <source media="(min-width: 640px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-          <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Smartphone">
-        </picture>
-    </div>
-    </div>
     </section>
 
     <section class="british-fact">
@@ -101,49 +108,46 @@
     </section>
 
     <section class="reviews">
-    <div class="reviews__wrapper block-wrapper">
-      <div class="reviews__slider slider">
-        <input class="slider__toggle" type="radio" id="reviews-btn-1" name="reviews-toggle" checked>
-        <input class="slider__toggle" type="radio" id="reviews-btn-2" name="reviews-toggle">
-        <input class="slider__toggle" type="radio" id="reviews-btn-3" name="reviews-toggle">
-        <ul class="reviews__slides slider__slides">
-          <li class="reviews__slide slider__slide">
-            <blockquote class="reviews-slide__wrapper">
-              <cite class="reviews-slide__auhor-name">
+      <div class="reviews__wrapper block-wrapper">
+        <div class="reviews__slider slider">
+          <input class="slider__toggle" type="radio" id="reviews-btn-1" name="reviews-toggle" checked>
+          <input class="slider__toggle" type="radio" id="reviews-btn-2" name="reviews-toggle">
+          <input class="slider__toggle" type="radio" id="reviews-btn-3" name="reviews-toggle">
+          <ul class="reviews__slides slider__slides">
+            <li class="reviews__slide slider__slide">
+              <blockquote class="reviews-slide__wrapper">
+                <cite class="reviews-slide__auhor-name">
                 <div>Николай Петров</div>
               <span class="reviews-slide__info">25 лет, водитель трамвая</span></cite>
-              <p class="reviews-slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-          </li>
-          <li class="reviews__slide slider__slide">
-            <blockquote class="reviews-slide__wrapper">
-              <cite class="reviews-slide__auhor-name">
+                <p class="reviews-slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>
+            <li class="reviews__slide slider__slide">
+              <blockquote class="reviews-slide__wrapper">
+                <cite class="reviews-slide__auhor-name">
                   <div>Миша Песков</div>
               <span class="reviews-slide__info">25 лет, водитель трамвая</span></cite>
-              <p class="reviews-slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-          </li>
-          <li class="reviews__slide slider__slide">
-            <blockquote class="reviews-slide__wrapper">
-              <cite class="reviews-slide__auhor-name">
+                <p class="reviews-slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>
+            <li class="reviews__slide slider__slide">
+              <blockquote class="reviews-slide__wrapper">
+                <cite class="reviews-slide__auhor-name">
                   <div>Петр матросов</div>
               <span class="reviews-slide__info">25 лет, водитель трамвая</span></cite>
-              <p class="reviews-slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-          </li>
-        </ul>
-        <div class="reviews__shift reviews__shift--left"></div>
-        <div class="reviews__shift reviews__shift--right"></div>
-        <div class="reviews__controls slider__controls">
-          <label for="reviews-btn-1"></label>
-          <label for="reviews-btn-2"></label>
-          <label for="reviews-btn-3"></label>
+                <p class="reviews-slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>
+          </ul>
+          <div class="reviews__shift reviews__shift--left"></div>
+          <div class="reviews__shift reviews__shift--right"></div>
+          <div class="reviews__controls slider__controls">
+            <label for="reviews-btn-1"></label>
+            <label for="reviews-btn-2"></label>
+            <label for="reviews-btn-3"></label>
+          </div>
         </div>
       </div>
-    </div>
     </section>
 
     <section class="services-package">
@@ -202,17 +206,16 @@
             </ul>
           </li>
         </ul>
-          <div class="services-package__slider-controls slider__controls">
-            <label for="services-btn-1"></label>
-            <label for="services-btn-2"></label>
-            <label for="services-btn-3"></label>
-          </div>
+        <div class="services-package__slider-controls slider__controls">
+          <label for="services-btn-1"></label>
+          <label for="services-btn-2"></label>
+          <label for="services-btn-3"></label>
+        </div>
       </div>
     </section>
 
     <section class="contacts block-wrapper">
-      <p class="contacts__slogan">Остались вопросы?
-      Свяжитесь с нами!</p>
+      <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
       <div class="contacts__wrapper">
         <div class="contacts__item contacts__item--phone-number">
           <b>Звоните:</b>
@@ -225,7 +228,7 @@
         <div class="contacts__item contacts__item--adress">
           <b>Приезжайте в гости:</b>
           <span>ул. Большая Конюшенная, 19/8</span>
-      </div>
+        </div>
       </div>
     </section>
     <div id="map" class="map">
@@ -235,8 +238,7 @@
   <footer class="page-footer page-footer--hidden page-footer--clean">
     <picture>
       <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-      <img class="page-footer__app-logo" width="147" height="41" src="img/logo-pink-blue-mobile.svg"
-      alt="Logo PINK">
+      <img class="page-footer__app-logo" width="147" height="41" src="img/logo-pink-blue-mobile.svg" alt="Logo PINK">
     </picture>
     <div class="social-links">
       <a class="social-links__item social-links__item--tw" href="https://twitter.com"></a>
@@ -246,8 +248,7 @@
     <p class="page-footer__copyright">
       Разработано:
       <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-      <svg class="page-footer__copyright-logo" width="27" height="34" version="1.0" id="Layer_1" x="0px" y="0px"
-        fill="#d22856" viewbox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+        <svg class="page-footer__copyright-logo" width="27" height="34" version="1.0" id="Layer_1" x="0px" y="0px" fill="#d22856" viewbox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
       <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
         l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
         l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787
@@ -258,23 +259,23 @@
       </a>
     </p>
   </footer>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhQdgdsLrc0CKNnVtNj2LfVznMFzHcxHA">
-    </script>
-    <script type="text/javascript" src="js/google_map.js"></script>
-    <script>
-      var navMain = document.querySelector(' .main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      navMain.classList.remove ('main-nav--nojs');
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
-  </body>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhQdgdsLrc0CKNnVtNj2LfVznMFzHcxHA">
+  </script>
+  <script type="text/javascript" src="js/google_map.js"></script>
+  <script>
+    var navMain = document.querySelector(" .main-nav");
+    var navToggle = document.querySelector(".main-nav__toggle");
+    navMain.classList.remove("main-nav--nojs");
+    navToggle.addEventListener("click", function() {
+      if (navMain.classList.contains("main-nav--closed")) {
+        navMain.classList.remove("main-nav--closed");
+        navMain.classList.add("main-nav--opened");
+      } else {
+        navMain.classList.add("main-nav--closed");
+        navMain.classList.remove("main-nav--opened");
+      }
+    });
+  </script>
+</body>
+
 </html>
