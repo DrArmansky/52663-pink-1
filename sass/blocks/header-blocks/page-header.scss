@@ -19,12 +19,12 @@
 
         @media #{$tablet} {
             width: 500px;
-            margin: 190px auto 75px;
+            margin: 179px auto 75px;
         }
 
         @media #{$desktop} {
             width: 820px;
-            margin: 175px auto 90px;
+            margin: 171px auto 99px;
         }
     }
 
@@ -70,7 +70,7 @@
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background: url("../img/bg-back-desktop@2x.jpg") bottom no-repeat;
       background-size: 2550px auto;
-      background-position: center 13px;
+      background-position: center top;
     }
   }
 

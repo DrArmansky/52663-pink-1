@@ -100,6 +100,7 @@
           <div class="competition-form__text-input-wrapper contest-form__text-input-wrapper--phone">
             <label for="phone-m" class="competition-form__label-up competition-form__label-up--mobile-view">Номер телефона</label>
             <input type="tel" class="competition-form__text-input competition-form__text-input--mobile-view" name="phone" id="phone-m" placeholder="Номер, пожалуйста">
+            <div class="competition-form__input-decor competition-form__input-decor--phone"></div>
             <div class="competition-form__input-wrapper">
                 <input type="tel" class="competition-form__text-input competition-form__text-input--other-view" name="phone" id="phone" placeholder="+7 XXX XXX-XX-XX">
                 <div class="competition-form__input-decor competition-form__input-decor--phone"></div>
@@ -109,6 +110,7 @@
           <div class="competition-form__text-input-wrapper contest-form__text-input-wrapper--mail">
             <label for="mail-m" class="competition-form__label-up competition-form__label-up--mobile-view">Адрес почты</label>
             <input type="email" class="competition-form__text-input competition-form__text-input--mobile-view" name="mail" id="mail-m" placeholder="Введите почту *">
+            <div class="competition-form__input-decor competition-form__input-decor--mail"></div>
             <div class="competition-form__input-wrapper">
                 <input type="email" class="competition-form__text-input competition-form__text-input--other-view" name="mail" id="mail" placeholder="E-mail, пожалуйста">
                 <div class="competition-form__input-decor competition-form__input-decor--mail"></div>
@@ -132,7 +134,7 @@
         <div class="competition-form__block competition-form__block--5">
           <div class="competition-form__block-wrapper">
           <h2 class="competition-form__block-header">Опишите свои эмоции</h2>
-          <textarea name="emotions-decr" id="emotions_descr" rows="5" cols="24" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea name="emotions-decr" id="emotions_descr" cols="24" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
         </div>
         <div class="competition-form__submit-wrapper">
@@ -143,7 +145,7 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <picture>
         <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
         <img class="page-footer__app-logo" width="147" height="41" src="img/logo-pink-blue-mobile.svg"

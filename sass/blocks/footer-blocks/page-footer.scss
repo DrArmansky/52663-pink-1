@@ -95,3 +95,9 @@
         padding: 68px 0;
     }
 }
+
+.page-footer--form {
+    @media #{$desktop} {
+        padding: 50px 0;
+    }
+}
